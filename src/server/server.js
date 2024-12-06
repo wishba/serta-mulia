@@ -34,11 +34,12 @@ const InputError = require('../exceptions/InputError');
     }
 
     if (response.isBoom) {
+      const statusCode = Number(response.statusCode) || 500; // Pastikan statusCode adalah angka, default ke 500 jika tidak valid.
       const newResponse = h.response({
         status: 'fail',
         message: response.message
-      })
-      newResponse.code(response.statusCode)
+      });
+      newResponse.code(statusCode); // Gunakan statusCode yang valid
       return newResponse;
     }
 
