@@ -1,6 +1,7 @@
 {
-  "name": "ml-web-server",
+  "name": "serta-mulia",
   "version": "1.0.0",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -10,12 +11,11 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
   "dependencies": {
-    "@google-cloud/firestore": "^7.10.0",
+    "@google-cloud/firestore": "^7.11.0",
     "@hapi/hapi": "^21.3.12",
-    "@tensorflow/tfjs-node": "^4.22.0",
-    "dotenv": "^16.4.6"
+    "@tensorflow/tfjs-node": "^4.14.0",
+    "dotenv": "^16.4.7"
   },
   "devDependencies": {
     "nodemon": "^3.1.7"
